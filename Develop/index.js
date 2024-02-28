@@ -114,8 +114,8 @@ inquirer
             message: 'Provide an email where users can send questions.',
         },
     ])
-    .then((answers) => {
-        console.log(answers)
+    .then((data) => {
+        console.log(data)
     });
 
 // TODO: Create a function to write README file
