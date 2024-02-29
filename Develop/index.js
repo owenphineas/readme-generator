@@ -26,14 +26,15 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const { default: Choices } = require("inquirer/lib/objects/choices");
 
+
 // TODO: Create an array of questions for user input
 inquirer
-    .prompt([
-        {
-            type: 'input',
-            name: 'title',
-            message: 'What is the title of the project?',
-        },
+.prompt([
+    {
+        type: 'input',
+        name: 'title',
+        message: 'What is the title of the project?',
+    },
         // 'Description'
         {
             type: 'input',
@@ -115,14 +116,14 @@ inquirer
         },
     ])
     .then((data) => {
-        console.log(data)
+        const genMarkdown = require('./utils/generateMarkdown');
+        fs.writeFile('README.md', genMarkdown.generateMarkdown(data), (err) => err && console.error(err));
     });
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+    
+    // TODO: Create a function to write README file
+    
+    // TODO: Create a function to initialize app
+    
+    // Function call to initialize app
+    // init();
+    
