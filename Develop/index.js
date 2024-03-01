@@ -32,12 +32,6 @@ inquirer
             name: 'learned',
             message: 'What did you learn?',
         },
-        // 'Table of contents'
-        {
-            type: 'confirm',
-            name: 'contents',
-            message: 'Include table of contents?'
-        },
         // 'Installation'
         {
             type: 'input',
@@ -54,7 +48,7 @@ inquirer
         {
             type: 'input',
             name: 'collaborators',
-            message: 'List any collaborators and the project, with links to their Github pages.',
+            message: 'List any collaborators on the project, with links to their Github pages.',
         },
         {
             type: 'input',
