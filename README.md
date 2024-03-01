@@ -20,6 +20,8 @@ The application requires Node to use.
 ## Usage
 In a terminal navigated to the Develop folder, use npm install to install the inquirer package. Then, run node index.js. This should prompt a series of questions to appear in the command line. Enter the answers and hit enter to move on to the next prompt.  Answers should be complete sentences. After the last prompt, a README.md file should be generated in the Develop folder for you to copy and insert into your project.
 
+![screenshot](./screenshot/readmeGenerator.png)
+
 ## Credits
 Inquirer package: https://www.npmjs.com/package/inquirer
 
